@@ -9,4 +9,4 @@
 </template>
 
 <script src="./Product.js"></script>
-<style src="./Product.css"></style>
+<style scoped src="./Product.css"></style>

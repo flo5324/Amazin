@@ -79,6 +79,7 @@ module.exports = {
     historyApiFallback: true,
     noInfo: true,
     overlay: true,
+    port:9090,
     proxy: {
       '*': {
         // Mock des réponses des l'API

@@ -10,7 +10,8 @@
     "axios": "^0.17.1",
     "babel-polyfill": "latest",
     "bootstrap": "next",
-    "vue": "^2.5.11"
+    "vue": "^2.5.11",
+    "vue-router": "latest"
   },
   "browserslist": [
     "> 1%",

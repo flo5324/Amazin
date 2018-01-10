@@ -3,36 +3,16 @@
     <app-header/>
     <h1>{{ msg }}</h1>
     <h2>Essential Links</h2>
-    <div class="col-8 offset-md-3">
-      <div class="row">
-        <app-product v-for="product in products" :key="product.ref" :product="product"/>
-      </div>
-    </div>
+    <router-view></router-view>
   </div>
 </template>
 
 <script>
-  import axios from 'axios'
-
   export default {
     name: 'app',
     data () {
-      return {
-        msg: 'Welcome to Your Vue.js App',
-        products: []
-      }
+      return {}
     },
-    created: function () {
-      this.getProducts()
-    },
-    methods: {
-      getProducts: function () {
-        axios.get('/products').then((response) => {
-          this.products = response.data
-          console.log(this)
-        })
-      }
-    }
   }
 </script>
 
