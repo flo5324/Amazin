@@ -1,8 +1,8 @@
+<!--suppress ALL -->
 <template>
   <div id="app">
     <app-header/>
     <h1>{{ msg }}</h1>
-    <h2>Essential Links</h2>
     <div class="col-8 offset-md-3">
       <div class="row">
         <app-product v-for="product in products" :key="product.ref" :product="product"/>
@@ -18,7 +18,7 @@
     name: 'app',
     data () {
       return {
-        msg: 'Welcome to Your Vue.js App',
+        msg: 'My amazin marketplace!',
         products: []
       }
     },
