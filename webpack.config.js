@@ -79,7 +79,11 @@ module.exports = {
     historyApiFallback: true,
     noInfo: true,
     overlay: true,
-    port:9090,
+    // Correctif du hot reload pour l'utilisation du bash sur W10
+    watchOptions: {
+      aggregateTimeout: 300,
+      poll: 1000
+    },
     proxy: {
       '*': {
         // Mock des réponses des l'API
