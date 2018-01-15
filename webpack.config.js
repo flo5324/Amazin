@@ -79,6 +79,7 @@ module.exports = {
     historyApiFallback: true,
     noInfo: true,
     overlay: true,
+    port:8081,
     // Correctif du hot reload pour l'utilisation du bash sur W10
     watchOptions: {
       aggregateTimeout: 300,
@@ -89,6 +90,7 @@ module.exports = {
         // Mock des réponses des l'API
         bypass: (req, res) => {
           if (req.url.includes('products')) return './dev-data/products.json'
+          if (req.url.includes('categories')) return './dev-data/categories.json'
         }
       }
     }

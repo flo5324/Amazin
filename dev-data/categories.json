@@ -1,0 +1,41 @@
+[
+  {
+    "name": "High-Tech",
+    "subCategories": [
+      {
+        "name": "TV"
+      },
+      {
+        "name": "Audio"
+      },
+      {
+        "name": "Ordinateurs"
+      }
+    ]
+  },
+  {
+    "name": "Livre",
+    "subCategories": [
+      {
+        "name": "Roman"
+      },
+      {
+        "name": "BD"
+      }
+    ]
+  },
+  {
+    "name": "Intérieur",
+    "subCategories": [
+      {
+        "name": "Salon"
+      },
+      {
+        "name": "Chambre"
+      },
+      {
+        "name": "Cuisine"
+      }
+    ]
+  }
+]
