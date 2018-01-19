@@ -8,5 +8,20 @@
   </div>
 </template>
 
-<script src="./ProductDetail.js"></script>
+<script>
+  export default {
+    name: 'ProductDetail',
+    created () {
+      this.$store.dispatch('getProduct', $route.param.id)
+    },
+    watch: {
+      '$route': 'fetchData'
+    },
+    computed: {
+      products () {
+        return this.$store.getters.product
+      }
+    }
+  }
+</script>
 <style scoped src="./ProductDetail.css"></style>

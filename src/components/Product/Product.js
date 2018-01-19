@@ -1,5 +1,6 @@
 export default {
- props: ['product']
+  name: 'product',
+  props: ['product']
 
 }
 

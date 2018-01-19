@@ -33,13 +33,8 @@
       getCategories: function () {
         axios.get('/categories').then((response) => {
           this.categories = response.data
-          console.log(this)
         })
       }
     }
   }
 </script>
-
-<style scoped>
-
-</style>

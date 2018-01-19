@@ -12,6 +12,7 @@
 <script>
   import Header from './components/Header/Header.vue'
   import NavCategories from './components/NavCategories'
+  import Product from './components/Product/Product'
 
   export default {
     name: 'app',
